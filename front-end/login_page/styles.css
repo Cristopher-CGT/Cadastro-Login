@@ -1,0 +1,80 @@
+
+* {
+    font-family: "Nunito", serif!important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.t-mid {
+    text-align: center;
+}
+
+#login_form {
+    align-items: center;
+}
+
+.login {
+    color: white;
+
+    /* CSS relacionado aos campos input */
+    .inputs {
+        width: 300px;
+        padding: 2.5px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 7.5px;
+
+        input {
+            background-color: white;
+            padding: 10px 5px; 
+            margin-left: 4.5px;
+            width: 100%;
+            font-size: 16.5px;
+            color: rgb(55, 55, 55);
+        }
+
+        .svg {
+            margin: 0 12px 0 7px;
+            width: 25px;
+        }
+
+        #eye:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* Button de login */
+    .btn-login {
+        width: 100%;
+        background-color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 7.5px;
+        font-size: 18px;
+        color: black;
+        margin-top: 15%;
+    }
+
+    .btn-login:hover{
+        cursor: pointer;
+    }
+
+    /* Link para o form de cadastro */
+    .cad {
+        margin-top: 15px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.637);
+        transition: 0.3s;
+    }
+
+    .cad:hover {
+        color: white;
+        cursor: pointer;
+        transform: scaleX(102%);
+    }
+}

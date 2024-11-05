@@ -1,0 +1,112 @@
+html {
+    backdrop-filter: blur(10px);
+}
+
+body {
+    /* background-color: lightgrey; */
+    background-image: url(../assets/milad-fakurian-DX7pT_guAyE-unsplash.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: bottom;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img {
+    width: 37%;
+    align-self: self-end;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+}
+
+/* Conteudo principal */
+.content {
+    width: 500px;
+    height: 85%;
+    margin: 5% auto 0 45%;
+    background-color: rgba(190, 190, 190, 0.1);
+    backdrop-filter: blur(7.5px);
+    
+    border: 1px solid white;
+    border-radius: 10px;
+
+    padding: 10px 10px 25px;
+
+
+    .register_user {
+        font-family: sans-serif;
+        font-size: 32px;
+    }
+
+    fieldset {
+        padding-left: 10px;
+        background-color: rgb(190, 190, 190);
+        border: 1px solid green;
+        border-radius: 5px;
+    }
+
+    input {
+        
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+    }
+
+    input:focus {
+        outline: none!important;
+        
+    }
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin: 15px 0 10px;
+    }
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 10px;
+}
+
+/* Linhas */
+hr {
+    background-color: white;
+    height: 1px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.line-s{
+    width: 500px;
+}
+.line-m{
+    width: 750px;
+}
+.line-l{
+    width: 1000px;
+}
+
+/* Cores */
+.red {
+    color: red!important;
+}
+
+.white {
+    color: white!important;
+}

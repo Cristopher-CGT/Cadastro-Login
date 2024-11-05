@@ -1,0 +1,33 @@
+Página de Cadastro de Usuário:
+
+O formulário de cadastro deve conter os seguintes campos: Nome, Email, Código Único, Título e Senha.
+Ao realizar o cadastro, faça uma consulta na API pública https://jsonplaceholder.typicode.com/posts/1 
+para recuperar o campo "title" e armazene esse valor no campo "Título" da tabela de usuários.
+Página de Login:
+
+O usuário deve inserir o Email e a Senha.
+Caso as credenciais sejam validadas com sucesso, o usuário deve ser redirecionado para uma página privada 
+(não é necessário incluir informações nessa página).
+Após concluir o exercício, faça o upload do seu código no GitHub e 
+envie o link do repositório para o email: heisentecnologia@gmail.com.
+
+
+Itens a se atentar - 
+. Icone svg das páginas
+. Title das páginas
+. Alterações dos arquivos em "// *"
+front-end
+    SVGs
+    Form_page/
+    Login_page/
+
+back-end
+    Form_page/
+    Login_page/
+
+
+images
+
+Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8848365">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8848365">Pixabay</a>
+Photo by <a href="https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Milad Fakurian</a> on <a href="https://unsplash.com/photos/an-abstract-purple-background-with-wavy-lines-DX7pT_guAyE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
