@@ -1,7 +1,7 @@
-#Página de Cadastro de Usuário e Login
+# Página de Cadastro de Usuário e Login
 
-##Para utilizar esse sistema, será necessário ter o MySQL baixado e um servidor web para interpretar o PHP
-###Tecnologias utilizadas
+## Para utilizar esse sistema, será necessário ter o MySQL baixado e um servidor web para interpretar o PHP
+### Tecnologias utilizadas
 
 Front-End
 HTML
