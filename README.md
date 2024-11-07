@@ -3,14 +3,14 @@
 ## Para utilizar esse sistema, será necessário ter o MySQL baixado e um servidor web para interpretar o PHP
 ### Tecnologias utilizadas
 
-Front-End
-HTML
-CSS
-JavaScript
+Front-End </br>
+HTML </br>
+CSS </br>
+JavaScript </br>
 
-Back-End
-PHP -> Xampp
-MySQL
+Back-End </br>
+PHP -> Xampp </br>
+MySQL </br>
 
 É necessário executar o código abaixo no seu MySQL para a criação da tabela de usuários consumida pelo sistema
 
