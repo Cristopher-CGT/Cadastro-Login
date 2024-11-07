@@ -7,10 +7,10 @@ if(basename($_SERVER["SCRIPT_NAME"]) === "db.connect.php"){
 
 // Adicione os valores do seu banco de dados MySQL aqui
 // ******************************************************************************
-$host = "localhost";
-$dbname = "vaga_php";
-$username = "root";
-$password = "root_nns";
+$host = "";
+$dbname = "";
+$username = "";
+$password = "";
 
 // PDO conexão
 try {
