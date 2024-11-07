@@ -1,33 +1,29 @@
-Página de Cadastro de Usuário:
+#Página de Cadastro de Usuário e Login
 
-O formulário de cadastro deve conter os seguintes campos: Nome, Email, Código Único, Título e Senha.
-Ao realizar o cadastro, faça uma consulta na API pública https://jsonplaceholder.typicode.com/posts/1 
-para recuperar o campo "title" e armazene esse valor no campo "Título" da tabela de usuários.
-Página de Login:
+##Para utilizar esse sistema, será necessário ter o MySQL baixado e um servidor web para interpretar o PHP
+###Tecnologias utilizadas
 
-O usuário deve inserir o Email e a Senha.
-Caso as credenciais sejam validadas com sucesso, o usuário deve ser redirecionado para uma página privada 
-(não é necessário incluir informações nessa página).
-Após concluir o exercício, faça o upload do seu código no GitHub e 
-envie o link do repositório para o email: heisentecnologia@gmail.com.
+Front-End
+HTML
+CSS
+JavaScript
 
+Back-End
+PHP -> Xampp
+MySQL
 
-Itens a se atentar - 
-. Icone svg das páginas
-. Title das páginas
-. Alterações dos arquivos em "// *"
-front-end
-    SVGs
-    Form_page/
-    Login_page/
+É necessário executar o código abaixo no seu MySQL para a criação da tabela de usuários consumida pelo sistema
 
-back-end
-    Form_page/
-    Login_page/
+```
+CREATE TABLE `test`.`users` (
+`in_user` INT NOT NULL AUTO_INCREMENT,
+`name_user` VARCHAR(30) NOT NULL,
+`email_user` VARCHAR(40) NOT NULL,
+`password_user` VARCHAR(128) NOT NULL,
+`title_user` VARCHAR(74) NOT NULL,
+`code_user` VARCHAR(40) NOT NULL,
+PRIMARY KEY (`in_user`)
+) ENGINE = InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
 
-
-images
-
-Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8848365">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8848365">Pixabay</a>
-Photo by <a href="https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Milad Fakurian</a> on <a href="https://unsplash.com/photos/an-abstract-purple-background-with-wavy-lines-DX7pT_guAyE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
+Também, altere as informações de acesso do seu banco de dados no arquivo "db.connect.php".
