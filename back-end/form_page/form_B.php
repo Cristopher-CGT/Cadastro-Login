@@ -24,14 +24,14 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     }
 
     // Validação de usuário existente no banco
-    $query = $pdo->query("SELECT in_user FROM users WHERE email_user = '$email';");
-    $copy = $query->fetch();
-    if($copy == true){
+    $query = $pdo->prepare("SELECT in_user FROM users WHERE email_user = :mail;");
+    $query->bindParam(':mail', $email);
+    $query->execute();
+    $copy = $query->fetchAll();
 
+    if(!empty($copy[0])){
 
-        // *******************************************************************************************
-        // Alterar para retornar a página de cadastro após o duplicado e informar o user da duplicidade
-        echo "Duplicado!";
+        header("Location: ../../front-end/form_page/index.php?duplicate");
         die();
     }
     
@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $insert->bindParam('pass', $password);
     $insert->execute();
     
-    header("Location: ../../front-end/login_page/");
+    header("Location: ../../front-end/form_page/index.php?cad=true");
 
 }
 else {

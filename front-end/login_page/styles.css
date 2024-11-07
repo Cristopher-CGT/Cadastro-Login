@@ -37,18 +37,4 @@
     .btn-login:hover{
         cursor: pointer;
     }
-
-    /* Link para o form de cadastro */
-    .cad {
-        margin-top: 15px;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.637);
-        transition: 0.3s;
-    }
-
-    .cad:hover {
-        color: white;
-        cursor: pointer;
-        transform: scaleX(102%);
-    }
 }

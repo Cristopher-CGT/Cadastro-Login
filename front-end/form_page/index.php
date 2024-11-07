@@ -20,37 +20,24 @@
         <!-- <button type="button" id="to_login"> Ir </button> -->
         <h2 class="register_user white"> Cadastro de Usuários </h2>
         <hr class="line-s">
-        <form action="../../back-end/form_page/form_B.php" method="POST" class="form">
-            <fieldset>
-                <legend>Name</legend>
-                <input type="text" name="name" placeholder="Teste">
-            </fieldset>
+        <form action="../../back-end/form_page/form_B.php" method="POST" class="form cad" id="cad_form">
             
-            <fieldset >
-                <legend>E-mail</legend>
-                <input type="text" name="email">
-            </fieldset>
+            <input type="text" name="name" id="name_cad" placeholder="Nome" maxlength="255" autocomplete="off" required>
+
+            <input type="email" name="email" id="email_cad" placeholder="E-mail" maxlength="255" required>
         
             <div class="collection">
-                <fieldset>
-                    <legend>Código</legend>
-                    <input type="number" name="unique_cod">
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Titulo</legend>
-                    <input type="text" name="title">
-                </fieldset>
+                <input type="text" name="unique_cod" id="cod_cad" class="duo-l" placeholder="Código Único" maxlength="150" autocomplete="off" required>
+            
+                <input type="text" name="title" id="title_cad" class="duo-r" placeholder="Título" maxlength="150" required>
             </div>
             
-            <fieldset>
-                <legend>Senha</legend>
-                <input type="password" name="password">
-            </fieldset>
+                <input type="password" name="password" id="pass_cad" placeholder="Senha" maxlength="255" required>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn-cad">Enviar</button>
+            <a class="page" href="./../login_page/index.php">Realizar o Login</a>
         </form>
     </div>
 </body>
-<script src="form.script.js"></script>
+<script src="./form.script.js"></script>
 </html>

@@ -17,12 +17,15 @@ eye.addEventListener("click", () => {
 });
 
 /* Validação de login */
+let email;
+let pass;
+
 const login = document.getElementById("login_form");
 login.addEventListener("submit", (e) => {
     e.preventDefault();
     
-    let email = document.getElementById("email");
-    let pass = document.getElementById("pass");
+    email = document.getElementById("email");
+    pass = document.getElementById("pass");
 
     if(email.value == "" || pass.value == ""){
         alert("Preencha corretamente todos os campos");

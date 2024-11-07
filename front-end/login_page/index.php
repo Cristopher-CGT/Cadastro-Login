@@ -21,17 +21,17 @@
         <form action="../../back-end/login_page/login_B.php" method="post" class="form login" id="login_form">
      
             <div class="inputs">
-                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" maxlength="255">
                 <img class="svg" src="../assets/svgs/email-svgrepo-com.svg"></img>
             </div>
 
             <div class="inputs">
-                <input type="password" name="pass" id="pass" placeholder="Senha">
+                <input type="password" name="pass" id="pass" placeholder="Senha" maxlength="255">
                 <img id="eye" class="svg" src="../assets/svgs/eye-off-svgrepo-com.svg"></img>
             </div>
      
              <button type="submit" class="btn-login">Login</button>
-             <a class="cad" href="./../form_page/index.php">Realizar o Cadastro de Usuário</a>
+             <a class="page" href="./../form_page/index.php">Realizar o Cadastro de Usuário</a>
         </form>
      </div>
 </body>
